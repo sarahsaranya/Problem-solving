@@ -8,7 +8,14 @@ class besttimetobuystock {
             for (int i = 0; i < a; i++) {
                 c[i] = sc.nextInt();
             }
-            int min = 
+            int min = Integer.MAX_VALUE;
+            int max = 0;
+
+            for (int k : c) {
+                min = Math.min(min, k);
+                max = Math.max(max, k - min);
+            }
+            System.out.print(max);
         }
 
     }
