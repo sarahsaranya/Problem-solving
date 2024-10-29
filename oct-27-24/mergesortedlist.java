@@ -4,6 +4,7 @@ import java.util.Collections;
 class Node {
     int data;
     Node next;
+    Node left, right;
 
     Node(int new_data) {
         data = new_data;
